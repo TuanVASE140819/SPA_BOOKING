@@ -133,86 +133,86 @@ class Body extends StatelessWidget {
                   ]),
                 ),
                 //=========================================================================================================SALE
-                // Padding(
-                //   padding: EdgeInsets.only(bottom: 15, top: 25),
-                //   child: Row(
-                //     mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                //     children: [
-                //       Text(
-                //         "Promotions",
-                //         style: TextStyle(
-                //             color: ColorConstants.textColorBold,
-                //             fontSize: 18,
-                //             fontWeight: FontWeight.bold,
-                //             fontStyle: FontStyle.italic),
-                //       ),
-                //       GestureDetector(
-                //         onTap: (){
-                //           Navigator.push(context, MaterialPageRoute(builder: (context) {
-                //             return SearchScreen(searchKey: "#Promotions");
-                //           },));
-                //         },
-                //         child: Text(
-                //           "See more",
-                //           style: TextStyle(
-                //               color: Colors.red[200],
-                //               fontSize: 17,
-                //               fontStyle: FontStyle.italic),
-                //         ),
-                //       )
-                //     ],
-                //   ),
-                // ),
-                // SingleChildScrollView(
-                //   scrollDirection: Axis.horizontal,
-                //   child: Row(
-                //       crossAxisAlignment: CrossAxisAlignment.start,
-                //       children: [
-                //         for(int i=0; i <= 4; i++)
-                //           BlockSpa(service: bySale[i],)
+                Padding(
+                  padding: EdgeInsets.only(bottom: 15, top: 25),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Text(
+                        "Promotions",
+                        style: TextStyle(
+                            color: ColorConstants.textColorBold,
+                            fontSize: 18,
+                            fontWeight: FontWeight.bold,
+                            fontStyle: FontStyle.italic),
+                      ),
+                      GestureDetector(
+                        onTap: (){
+                          Navigator.push(context, MaterialPageRoute(builder: (context) {
+                            return SearchScreen(searchKey: "#Promotions");
+                          },));
+                        },
+                        child: Text(
+                          "See more",
+                          style: TextStyle(
+                              color: Colors.red[200],
+                              fontSize: 17,
+                              fontStyle: FontStyle.italic),
+                        ),
+                      )
+                    ],
+                  ),
+                ),
+                SingleChildScrollView(
+                  scrollDirection: Axis.horizontal,
+                  child: Row(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        for(int i=0; i <= 4; i++)
+                          BlockSpa(service: bySale[i],)
 
-                //       ]),
-                // ),
-                //==================================================HIGH RATING
-                // Padding(
-                //   padding: EdgeInsets.only(bottom: 15, top: 25),
-                //   child: Row(
-                //     mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                //     children: [
-                //       Text(
-                //         "High Rating",
-                //         style: TextStyle(
-                //             color: ColorConstants.textColorBold,
-                //             fontSize: 18,
-                //             fontWeight: FontWeight.bold,
-                //             fontStyle: FontStyle.italic),
-                //       ),
-                //       GestureDetector(
-                //         onTap: (){
-                //           Navigator.push(context, MaterialPageRoute(builder: (context) {
-                //             return SearchScreen(searchKey: "#HighRating");
-                //           },));
-                //         },
-                //         child: Text(
-                //           "See more",
-                //           style: TextStyle(
-                //               color: Colors.red[200],
-                //               fontSize: 17,
-                //               fontStyle: FontStyle.italic),
-                //         ),
-                //       )
-                //     ],
-                //   ),
-                // ),
-                // SingleChildScrollView(
-                //   scrollDirection: Axis.horizontal,
-                //   child:
-                //       Row(crossAxisAlignment: CrossAxisAlignment.start,children: [
-                //         for(int j=0; j <= 4; j++)
-                //           BlockSpa(service: byRate[j],)
+                      ]),
+                ),
+                // ==================================================HIGH RATING
+                Padding(
+                  padding: EdgeInsets.only(bottom: 15, top: 25),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Text(
+                        "High Rating",
+                        style: TextStyle(
+                            color: ColorConstants.textColorBold,
+                            fontSize: 18,
+                            fontWeight: FontWeight.bold,
+                            fontStyle: FontStyle.italic),
+                      ),
+                      GestureDetector(
+                        onTap: (){
+                          Navigator.push(context, MaterialPageRoute(builder: (context) {
+                            return SearchScreen(searchKey: "#HighRating");
+                          },));
+                        },
+                        child: Text(
+                          "See more",
+                          style: TextStyle(
+                              color: Colors.red[200],
+                              fontSize: 17,
+                              fontStyle: FontStyle.italic),
+                        ),
+                      )
+                    ],
+                  ),
+                ),
+                SingleChildScrollView(
+                  scrollDirection: Axis.horizontal,
+                  child:
+                      Row(crossAxisAlignment: CrossAxisAlignment.start,children: [
+                        for(int j=0; j <= 4; j++)
+                          BlockSpa(service: byRate[j],)
 
-                //       ]),
-                // )
+                      ]),
+                )
               ])),
           SizedBox(height: 20,)
         ],

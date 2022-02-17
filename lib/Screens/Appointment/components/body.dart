@@ -35,21 +35,21 @@ class _BodyAppointment extends State<BodyAppointment>{
                 fontSize: 18,
               ),
             ),
-            // SizedBox(height: 15,),
-            // for(int i=0; i<2;i++)
-            //   UpcomingServiceBox(service: Service(service.name, service.rate, service.price,service.cateType,service.sale,service.spa)),
-            // SizedBox(height: 12,),
-            // Text(
-            //   "Appointments History",
-            //   style: TextStyle(
-            //     fontWeight: FontWeight.bold,
-            //     fontSize: 18,
-            //   ),
-            // ),
-            // SizedBox(height: 15,),
+            SizedBox(height: 15,),
+            for(int i=0; i<2;i++)
+              UpcomingServiceBox(service: Service(service.name, service.rate, service.price,service.cateType,service.sale,service.spa)),
+            SizedBox(height: 12,),
+            Text(
+              "Appointments History",
+              style: TextStyle(
+                fontWeight: FontWeight.bold,
+                fontSize: 18,
+              ),
+            ),
+            SizedBox(height: 15,),
 
-            //   HistoryServiceBox(service: Service(service.name, service.rate, service.price,service.cateType,service.sale,service.spa),cancel: true,),
-            // HistoryServiceBox(service: Service(service.name, service.rate, service.price,service.cateType,service.sale,service.spa),cancel: false,),
+              HistoryServiceBox(service: Service(service.name, service.rate, service.price,service.cateType,service.sale,service.spa),cancel: true,),
+            HistoryServiceBox(service: Service(service.name, service.rate, service.price,service.cateType,service.sale,service.spa),cancel: false,),
 
           ],
         ),

@@ -165,31 +165,31 @@ class BottomBarSpaApp extends StatelessWidget {
           )
         ,
         // //=============================================================TREATMENT
-        // if(selected == "treatment")
-        //   IconButton(
-        //     onPressed: () {
-        //       Navigator.push(context, MaterialPageRoute(
-        //         builder: (context) {
-        //           return MainScreen();
-        //         },
-        //       ));
-        //     },
-        //     icon: Image.asset("assets/icons/treatment.png",color: colorSelected,),
-        //     iconSize: size.width * 0.09,
-        //   )
-        // else
-        //   IconButton(
-        //     onPressed: () {
-        //       Navigator.push(context, MaterialPageRoute(
-        //         builder: (context) {
-        //           return MainScreen();
-        //         },
-        //       ));
-        //     },
-        //     icon: Image.asset("assets/icons/treatment.png", color: colorNormal,),
-        //     iconSize: size.width * 0.09,
-        //   )
-        // ,
+        if(selected == "treatment")
+          IconButton(
+            onPressed: () {
+              Navigator.push(context, MaterialPageRoute(
+                builder: (context) {
+                  return MainScreen();
+                },
+              ));
+            },
+            icon: Image.asset("assets/icons/treatment.png",color: colorSelected,),
+            iconSize: size.width * 0.09,
+          )
+        else
+          IconButton(
+            onPressed: () {
+              Navigator.push(context, MaterialPageRoute(
+                builder: (context) {
+                  return MainScreen();
+                },
+              ));
+            },
+            icon: Image.asset("assets/icons/treatment.png", color: colorNormal,),
+            iconSize: size.width * 0.09,
+          )
+        ,
         //=============================================================
         if(selected == "profile")
           GestureDetector(

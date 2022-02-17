@@ -52,9 +52,38 @@ class _BodyState extends State<Body> {
                 onChanged: (value) {}),
             RoundedPasswordField(onChanged: (value) {}),
             SizedBox(height: size.width * 0.03),
+            const Text(
+              "Forgot password ?",
+              textAlign: TextAlign.right,
+              style: TextStyle(
+                  fontFamily: 'Roboto',
+                  letterSpacing: 0.6,
+                  color: Color.fromRGBO(238,153,190,1),
+                  fontSize: 12),
+            ),
             RoundedButton(
               text: "Continue",
               color: (Color.fromRGBO(238,153,190,1)),
+              press: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context) {
+                  return MainScreen(); //Routing Home Page in here
+                }));
+              },
+              textColor: Colors.white,
+            ),
+             RoundedButton(
+              text: "Sign in with Google",
+              color: Color.fromRGBO(238,153,190,1),
+              press: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context) {
+                  return MainScreen(); //Routing Home Page in here
+                }));
+              },
+              textColor: Colors.white,
+            ),
+             RoundedButton(
+              text: "Sign in with Facebook",
+              color: Color.fromRGBO(238,153,190,1),
               press: () {
                 Navigator.push(context, MaterialPageRoute(builder: (context) {
                   return MainScreen(); //Routing Home Page in here
@@ -73,6 +102,7 @@ class _BodyState extends State<Body> {
               },
               textColor: Colors.white,
             ),
+           
           ],
         ),
       ),

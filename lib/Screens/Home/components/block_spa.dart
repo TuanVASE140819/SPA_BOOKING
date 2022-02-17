@@ -87,63 +87,63 @@ class BlockSpa extends StatelessWidget {
                           fontSize: 12, fontWeight: FontWeight.bold),
                     ),
                   )),
-              // Padding(
-              //     padding: EdgeInsets.only(top: 5),
-              //     child: Row(
-              //       children: [
-              //         Image.asset("assets/icons/starColor.png", width: 18),
-              //         Text(service.rate.toString(),style: TextStyle(
-              //             fontSize: 12),),
-              //         Padding(padding: EdgeInsets.only(left: 15)),
-              //         Image.asset(
-              //           "assets/icons/location.png",
-              //           width: 18,
-              //           color: Color.fromRGBO(196, 196, 196, 1),
-              //         ),
-              //         Text("${service.distance} km",style: TextStyle(
-              //         fontSize: 12),),
-              //       ],
-              //     )),
-              // Padding(
-              //     padding: EdgeInsets.only(top: 5),
-              //     child: Row(
-              //       children: [
-              //         Image.asset(
-              //           "assets/icons/price.png",
-              //           width: 18,
-              //           color: Color.fromRGBO(33, 159, 13, 1),
-              //         ),
-              //         if(service.sale <=0)
-              //           Text(" \$${service.price}",style: TextStyle(
-              //           fontSize: 12),)
-              //         else
-              //               Text(
-              //                 " \$${service.price}",
-              //                   style: TextStyle(
-              //                     decoration: TextDecoration.lineThrough,
-              //                       fontSize: 12
-              //                   ),
-              //               ),
-              //       ],
-              //     )),
-              // if(service.sale >0)
-              //   Padding(
-              //       padding: EdgeInsets.only(top: 5),
-              //       child: Row(
-              //         children: [
-              //           Image.asset(
-              //             StrConstants.iconPath+"salePrice.png",
-              //             width: 18,
-              //           ),
-              //             Text(
-              //               " \$${service.price*(100-service.sale)/100}",
-              //               style: TextStyle(
-              //                 color: Colors.red,
-              //                 fontSize: 12
-              //               ),
-              //             ),
-              //         ],
-              //       )),
+              Padding(
+                  padding: EdgeInsets.only(top: 5),
+                  child: Row(
+                    children: [
+                      Image.asset("assets/icons/starColor.png", width: 18),
+                      Text(service.rate.toString(),style: TextStyle(
+                          fontSize: 12),),
+                      Padding(padding: EdgeInsets.only(left: 15)),
+                      Image.asset(
+                        "assets/icons/location.png",
+                        width: 18,
+                        color: Color.fromRGBO(196, 196, 196, 1),
+                      ),
+                      Text("${service.distance} km",style: TextStyle(
+                      fontSize: 12),),
+                    ],
+                  )),
+              Padding(
+                  padding: EdgeInsets.only(top: 5),
+                  child: Row(
+                    children: [
+                      Image.asset(
+                        "assets/icons/price.png",
+                        width: 18,
+                        color: Color.fromRGBO(33, 159, 13, 1),
+                      ),
+                      if(service.sale <=0)
+                        Text(" \$${service.price}",style: TextStyle(
+                        fontSize: 12),)
+                      else
+                            Text(
+                              " \$${service.price}",
+                                style: TextStyle(
+                                  decoration: TextDecoration.lineThrough,
+                                    fontSize: 12
+                                ),
+                            ),
+                    ],
+                  )),
+              if(service.sale >0)
+                Padding(
+                    padding: EdgeInsets.only(top: 5),
+                    child: Row(
+                      children: [
+                        Image.asset(
+                          StrConstants.iconPath+"salePrice.png",
+                          width: 18,
+                        ),
+                          Text(
+                            " \$${service.price*(100-service.sale)/100}",
+                            style: TextStyle(
+                              color: Colors.red,
+                              fontSize: 12
+                            ),
+                          ),
+                      ],
+                    )),
             ],
           )),
     );

@@ -150,82 +150,82 @@ class _SpaDetailScreen extends State<SpaDetailScreen> {
                       )
                     ],
                   ),
-                  // Row(children: [
-                  //   for (int i = 1; i <= widget.spa.rate.round(); i++)
-                  //     Image.asset(
-                  //       StrConstants.iconPath + "starColor.png",
-                  //       width: 25,
-                  //     ),
-                  //   for (int i = 1; i <= 5 - widget.spa.rate.round(); i++)
-                  //     Image.asset(
-                  //       StrConstants.iconPath + "starNoColor.png",
-                  //       width: 25,
-                  //     ),
-                  //   Padding(
-                  //     padding: EdgeInsets.only(left: 15),
-                  //     child: Text(
-                  //       "${widget.spa.totalRate} reviews",
-                  //       style: TextStyle(color: Colors.grey),
-                  //     ),
-                  //   )
-                  // ]),
-                  // SizedBox(
-                  //   height: 10,
-                  // ),
-                  // Text(
-                  //   widget.spa.address,
-                  //   style: TextStyle(
-                  //       color: Colors.black54,
-                  //       fontStyle: FontStyle.italic,
-                  //       fontSize: 20),
-                  // ),
-                  // SizedBox(
-                  //   height: 10,
-                  // ),
-                  // Row(
-                  //   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  //   children: [
-                  //     PickFuntionButton(
-                  //       text: "Services",
-                  //       selected: selected,
-                  //       func: () {
-                  //         setState(() {
-                  //           selected = "Services";
-                  //         });
-                  //       },
-                  //       sizeButton: size.width * 0.25,
-                  //     ),
-                  //     PickFuntionButton(
-                  //       text: "Reviews",
-                  //       selected: selected,
-                  //       func: () {
-                  //         setState(() {
-                  //           selected = "Reviews";
-                  //         });
-                  //       },
-                  //       sizeButton: size.width * 0.25,
-                  //     ),
-                  //   ],
-                  // ),
-                  // SizedBox(
-                  //   height: 15,
-                  // ),
-                  // Center(
-                  //   child: Container(
-                  //     width: size.width * 0.8,
-                  //     decoration: BoxDecoration(
-                  //         border: Border(
-                  //             top:
-                  //             BorderSide(width: 1, color: Colors.black54))),
-                  //   ),
-                  // ),
-                  // SizedBox(
-                  //   height: 12,
-                  // ),
-                  // getListOfFunction(),
-                  // SizedBox(
-                  //   height: 10,
-                  // ),
+                  Row(children: [
+                    for (int i = 1; i <= widget.spa.rate.round(); i++)
+                      Image.asset(
+                        StrConstants.iconPath + "starColor.png",
+                        width: 25,
+                      ),
+                    for (int i = 1; i <= 5 - widget.spa.rate.round(); i++)
+                      Image.asset(
+                        StrConstants.iconPath + "starNoColor.png",
+                        width: 25,
+                      ),
+                    Padding(
+                      padding: EdgeInsets.only(left: 15),
+                      child: Text(
+                        "${widget.spa.totalRate} reviews",
+                        style: TextStyle(color: Colors.grey),
+                      ),
+                    )
+                  ]),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  Text(
+                    widget.spa.address,
+                    style: TextStyle(
+                        color: Colors.black54,
+                        fontStyle: FontStyle.italic,
+                        fontSize: 20),
+                  ),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      PickFuntionButton(
+                        text: "Services",
+                        selected: selected,
+                        func: () {
+                          setState(() {
+                            selected = "Services";
+                          });
+                        },
+                        sizeButton: size.width * 0.25,
+                      ),
+                      PickFuntionButton(
+                        text: "Reviews",
+                        selected: selected,
+                        func: () {
+                          setState(() {
+                            selected = "Reviews";
+                          });
+                        },
+                        sizeButton: size.width * 0.25,
+                      ),
+                    ],
+                  ),
+                  SizedBox(
+                    height: 15,
+                  ),
+                  Center(
+                    child: Container(
+                      width: size.width * 0.8,
+                      decoration: BoxDecoration(
+                          border: Border(
+                              top:
+                              BorderSide(width: 1, color: Colors.black54))),
+                    ),
+                  ),
+                  SizedBox(
+                    height: 12,
+                  ),
+                  getListOfFunction(),
+                  SizedBox(
+                    height: 10,
+                  ),
                 ],
               ))
         ],
@@ -463,156 +463,156 @@ class _SpaDetailScreen extends State<SpaDetailScreen> {
       Dialog dialog = Dialog(
 
         child: SingleChildScrollView(
-          // child: Column(
-          //   mainAxisAlignment: MainAxisAlignment.start,
-          //   crossAxisAlignment: CrossAxisAlignment.start,
-            // children: [
-            //   Padding(padding: EdgeInsets.only(top: 10, right: 10, left: 10),
-            //     child: Column(
-            //       crossAxisAlignment: CrossAxisAlignment.start,
-            //       children: [
-            //         Text(
-            //           widget.spa.name,
-            //           style: TextStyle(
-            //             fontSize: 18,
-            //             fontWeight: FontWeight.bold
-            //           ),
-            //         ),
-            //         SizedBox(height: 5,),
-            //         Text(
-            //           widget.spa.address,
-            //           style: TextStyle(
-            //               fontSize: 16,
-            //               fontStyle: FontStyle.italic
-            //           ),
-            //         ),
-            //         SizedBox(height: 5,),
-            //         Row(
-            //           children: [
-            //             Text(
-            //               "Service rate: ${widget.selectedService!.rate.toString()}",
-            //               style: TextStyle(
-            //                   fontSize: 16,
-            //                   fontStyle: FontStyle.italic
-            //               ),
-            //             ),
-            //             Image.asset(StrConstants.iconPath+"starColor.png",width: 18,)
-            //           ],
-            //         )
-            //         ,
-            //         SizedBox(height: 5,),
-            //         Row(
-            //           mainAxisAlignment: MainAxisAlignment.center,
-            //           children: [
-            //             if (service.sale > 0)
-            //               Stack(
-            //                 children: [
-            //                   Image.asset(
-            //                     StrConstants.imgPath + img,
-            //                     width: size.width * 0.7,
-            //                     height: size.width *0.7*3/4,
-            //                     fit: BoxFit.fill,
-            //                   ),
-            //                   Text(
-            //                     "Sale ${service.sale}%",
-            //                     style: TextStyle(
-            //                         backgroundColor: Colors.red[100],
-            //                         color: Colors.red,
-            //                         fontSize: 10,
-            //                         fontWeight: FontWeight.bold),
-            //                   ),
-            //                 ],
-            //               )
-            //             else
-            //               Image.asset(
-            //                 StrConstants.imgPath + img,
-            //                 width: size.width * 0.7,
-            //                 height: size.width *0.7*3/4,
-            //                 fit: BoxFit.fill,
-            //               )
-            //           ],
-            //         )
-            //         ,
-            //         SizedBox(height: 5,),
-            //         Container(
-            //           width: size.width * 0.7,
-            //           child: Column(
-            //             crossAxisAlignment: CrossAxisAlignment.start,
-            //             children: [
-            //               Text(
-            //                 service.name + " " + service.cateType,
-            //                 style: TextStyle(
-            //                     fontWeight: FontWeight.bold,
-            //                     color: ColorConstants.mainColorBold),
-            //               ),
-            //               SizedBox(height: 5,),
-            //               Row(
-            //                 mainAxisAlignment: MainAxisAlignment.start,
-            //                 children: [
-            //                   Text(
-            //                     "Price: ",
-            //                     style: TextStyle(
-            //                         fontSize: 12,
-            //                         color: Colors.black,
-            //                         fontWeight: FontWeight.bold
-            //                     ),
-            //                   ),
-            //                   if (service.sale > 0)
-            //                     Text(
-            //                       "\$${service.price}",
-            //                       style: TextStyle(
-            //                           fontSize: 10,
-            //                           color: ColorConstants.mainColorBold,
-            //                           decoration: TextDecoration.lineThrough),
-            //                     ),
-            //                   Text(
-            //                     "\$${service.price * (100 - service.sale) / 100}",
-            //                     style: TextStyle(
-            //                         fontWeight: FontWeight.bold, color: Colors.red,fontSize: 12),
-            //                   )
-            //                 ],
-            //               ),
-            //               Text(
-            //                 service.name +
-            //                     " " +
-            //                     service.cateType +
-            //                     " is your beauty care service. Make you feel comfortable, relieve stress after work.",
-            //                 style: TextStyle(fontSize: 12),
-            //                 overflow: TextOverflow.ellipsis,
-            //                 maxLines: 4,
-            //               ),
-            //               SizedBox(height: 10,),
-            //               Row(
-            //                 mainAxisAlignment: MainAxisAlignment.end,
-            //                 children: [
-            //                   RaisedButton(
-            //                     onPressed: () {Navigator.pop(context);},
-            //                     color: Colors.orange,
-            //                     shape: RoundedRectangleBorder(
-            //                         borderRadius: BorderRadius.circular(5)),
-            //                     child: Text("Cancel"),
-            //                   ),
-            //                   SizedBox(width: 3,),
-            //                   RaisedButton(
-            //                     onPressed: () {
-            //                       Navigator.pop(context, service);
-            //                     },
-            //                     color: Colors.green,
-            //                     shape: RoundedRectangleBorder(
-            //                         borderRadius: BorderRadius.circular(5)),
-            //                     child: Text("Choose"),
-            //                   )
-            //                 ],
-            //               )
-            //             ],
-            //           ),
-            //         )
-            //       ],
-            //     ),
-            //   ),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Padding(padding: EdgeInsets.only(top: 10, right: 10, left: 10),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      widget.spa.name,
+                      style: TextStyle(
+                        fontSize: 18,
+                        fontWeight: FontWeight.bold
+                      ),
+                    ),
+                    SizedBox(height: 5,),
+                    Text(
+                      widget.spa.address,
+                      style: TextStyle(
+                          fontSize: 16,
+                          fontStyle: FontStyle.italic
+                      ),
+                    ),
+                    SizedBox(height: 5,),
+                    Row(
+                      children: [
+                        Text(
+                          "Service rate: ${widget.selectedService!.rate.toString()}",
+                          style: TextStyle(
+                              fontSize: 16,
+                              fontStyle: FontStyle.italic
+                          ),
+                        ),
+                        Image.asset(StrConstants.iconPath+"starColor.png",width: 18,)
+                      ],
+                    )
+                    ,
+                    SizedBox(height: 5,),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        if (service.sale > 0)
+                          Stack(
+                            children: [
+                              Image.asset(
+                                StrConstants.imgPath + img,
+                                width: size.width * 0.7,
+                                height: size.width *0.7*3/4,
+                                fit: BoxFit.fill,
+                              ),
+                              Text(
+                                "Sale ${service.sale}%",
+                                style: TextStyle(
+                                    backgroundColor: Colors.red[100],
+                                    color: Colors.red,
+                                    fontSize: 10,
+                                    fontWeight: FontWeight.bold),
+                              ),
+                            ],
+                          )
+                        else
+                          Image.asset(
+                            StrConstants.imgPath + img,
+                            width: size.width * 0.7,
+                            height: size.width *0.7*3/4,
+                            fit: BoxFit.fill,
+                          )
+                      ],
+                    )
+                    ,
+                    SizedBox(height: 5,),
+                    Container(
+                      width: size.width * 0.7,
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            service.name + " " + service.cateType,
+                            style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                color: ColorConstants.mainColorBold),
+                          ),
+                          SizedBox(height: 5,),
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            children: [
+                              Text(
+                                "Price: ",
+                                style: TextStyle(
+                                    fontSize: 12,
+                                    color: Colors.black,
+                                    fontWeight: FontWeight.bold
+                                ),
+                              ),
+                              if (service.sale > 0)
+                                Text(
+                                  "\$${service.price}",
+                                  style: TextStyle(
+                                      fontSize: 10,
+                                      color: ColorConstants.mainColorBold,
+                                      decoration: TextDecoration.lineThrough),
+                                ),
+                              Text(
+                                "\$${service.price * (100 - service.sale) / 100}",
+                                style: TextStyle(
+                                    fontWeight: FontWeight.bold, color: Colors.red,fontSize: 12),
+                              )
+                            ],
+                          ),
+                          Text(
+                            service.name +
+                                " " +
+                                service.cateType +
+                                " is your beauty care service. Make you feel comfortable, relieve stress after work.",
+                            style: TextStyle(fontSize: 12),
+                            overflow: TextOverflow.ellipsis,
+                            maxLines: 4,
+                          ),
+                          SizedBox(height: 10,),
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.end,
+                            children: [
+                              RaisedButton(
+                                onPressed: () {Navigator.pop(context);},
+                                color: Colors.orange,
+                                shape: RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.circular(5)),
+                                child: Text("Cancel"),
+                              ),
+                              SizedBox(width: 3,),
+                              RaisedButton(
+                                onPressed: () {
+                                  Navigator.pop(context, service);
+                                },
+                                color: Colors.green,
+                                shape: RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.circular(5)),
+                                child: Text("Choose"),
+                              )
+                            ],
+                          )
+                        ],
+                      ),
+                    )
+                  ],
+                ),
+              ),
 
-            // ],
-          // ),
+            ],
+          ),
         ),
 
         backgroundColor: Colors.white,
