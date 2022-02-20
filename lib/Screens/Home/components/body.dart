@@ -104,11 +104,11 @@ class Body extends StatelessWidget {
                             fontStyle: FontStyle.italic),
                       ),
                       GestureDetector(
-                        onTap: (){
-                          Navigator.push(context, MaterialPageRoute(builder: (context) {
-                            return SearchScreen(searchKey: "#SpaNearBy");
-                          },));
-                        },
+                        // onTap: (){
+                        //   Navigator.push(context, MaterialPageRoute(builder: (context) {
+                        //     return SearchScreen(searchKey: "#SpaNearBy");
+                        //   },));
+                        // },
                         child: Text(
                           "See more",
                           style: TextStyle(

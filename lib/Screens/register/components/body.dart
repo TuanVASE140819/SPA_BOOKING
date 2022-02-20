@@ -4,17 +4,18 @@ import 'package:spa_booking/Components/rounded_input_field.dart';
 import 'package:spa_booking/Components/rounded_password_field.dart';
 import 'package:spa_booking/Screens/Home/home_screen.dart';
 import 'package:spa_booking/Screens/Login/components/background.dart';
+import 'package:spa_booking/Screens/Login/login_screen.dart';
 
 import 'or_divider.dart';
+
 class Body extends StatefulWidget {
   const Body({Key? key}) : super(key: key);
 
   @override
   _BodyState createState() => _BodyState();
-
 }
-class _BodyState extends State<Body> {
 
+class _BodyState extends State<Body> {
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
@@ -28,13 +29,29 @@ class _BodyState extends State<Body> {
             //   width: size.width * 0.6,
             // ),
             const Text(
-              "Regiter Screen",
+              " Hi there "
+              "Let's get Star",
               style: TextStyle(
                   fontFamily: 'Roboto',
                   letterSpacing: 1.2,
-                  color: Color.fromRGBO(238,153,190,1),
+                  color: Color.fromRGBO(238, 153, 190, 1),
                   fontSize: 20),
             ),
+            RoundedInputField(
+                hintText: "Username",
+                icon: Icons.assignment_ind_outlined,
+                onChanged: (value) {}),
+            RoundedInputField(
+                hintText: "Email",
+                icon: Icons.mail_outline_outlined,
+                onChanged: (value) {}),
+            RoundedPasswordField(onChanged: (value) {}),
+            RoundedInputField(
+                hintText: "Confirm Password",
+                icon: Icons.lock_clock_rounded,
+                onChanged: (value) {}),
+            // RoundedPasswordField(onChanged: (value) {}),
+            // SizedBox(height: size.width * 0.03),
             // const Text(
             //   "The beauty of nature",
             //   style: TextStyle(
@@ -50,33 +67,31 @@ class _BodyState extends State<Body> {
             //     icon: Icons.assignment_ind_outlined,
             //     onChanged: (value) {}),
             // RoundedPasswordField(onChanged: (value) {}),
-            // SizedBox(height: size.width * 0.03),
-            // RoundedButton(
-            //   text: "Continue",
-            //   color: (Color.fromRGBO(238,153,190,1)),
-            //   press: () {
-            //     Navigator.push(context, MaterialPageRoute(builder: (context) {
-            //       return MainScreen(); //Routing Home Page in here
-            //     }));
-            //   },
-            //   textColor: Colors.white,
-            // ),
-            // const OrDivider(),
-            // RoundedButton(
-            //   text: "Create An Account",
-            //   color: Color.fromRGBO(238,153,190,1),
-            //   press: () {
-            //     Navigator.push(context, MaterialPageRoute(builder: (context) {
-            //       return MainScreen(); //Routing Home Page in here
-            //     }));
-            //   },
-            //   textColor: Colors.white,
-            // ),
+            SizedBox(height: size.width * 0.03),
+            RoundedButton(
+              text: "Continue",
+              color: (Color.fromRGBO(238, 153, 190, 1)),
+              press: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context) {
+                  return LoginScreen(); //Routing Home Page in here
+                }));
+              },
+              textColor: Colors.white,
+            ),
+            const OrDivider(),
+            RoundedButton(
+              text: "I have An Account",
+              color: Color.fromRGBO(238, 153, 190, 1),
+              press: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context) {
+                  return LoginScreen(); //Routing Home Page in here
+                }));
+              },
+              textColor: Colors.white,
+            ),
           ],
         ),
       ),
     );
   }
 }
-
-

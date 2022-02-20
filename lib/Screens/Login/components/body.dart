@@ -62,7 +62,7 @@ class _BodyState extends State<Body> {
                   fontSize: 12),
             ),
             RoundedButton(
-              text: "Continue",
+              text: "Sign in",
               color: (Color.fromRGBO(238,153,190,1)),
               press: () {
                 Navigator.push(context, MaterialPageRoute(builder: (context) {

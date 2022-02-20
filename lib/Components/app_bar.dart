@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:spa_booking/Screens/Login/login_screen.dart';
+import 'package:spa_booking/Screens/notification/notification_screen.dart';
 import 'package:spa_booking/Screens/SpaDetail/ChosenService/chosen_service_screen.dart';
 import 'package:spa_booking/models/service.dart';
 import 'package:spa_booking/utils/constants.dart';
@@ -33,7 +34,7 @@ class TopBar {
               onPressed: () {
                 Navigator.push(context, MaterialPageRoute(
                   builder: (context) {
-                    return LoginScreen();
+                    return notificationScreen();
                   },
                 ));
               },

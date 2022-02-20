@@ -32,16 +32,16 @@ class BlockSpa extends StatelessWidget {
       image=StrConstants.imgPath+"hotStoneTherapy.png";
     Size size = MediaQuery.of(context).size;
     return GestureDetector(
-      onTap: () {
-        Navigator.push(context, MaterialPageRoute(builder: (context) {
-          return SpaDetailScreen(
-            lastPage: lastPage,
-            searchKey: "",
-            spa: service.spa,
-            service: service,
-          );
-        }));
-      },
+      // onTap: () {
+      //   Navigator.push(context, MaterialPageRoute(builder: (context) {
+      //     return SpaDetailScreen(
+      //       lastPage: lastPage,
+      //       searchKey: "",
+      //       spa: service.spa,
+      //       service: service,
+      //     );
+      //   }));
+      // },
       child: Padding(
           padding: EdgeInsets.only(right: 15),
           child: Column(
@@ -81,7 +81,7 @@ class BlockSpa extends StatelessWidget {
                   child: Container(
                     width: size.width * 0.35,
                     child: Text(
-                      service.name+" "+service.cateType,
+                      service.name+" --  "+service.cateType,
                       maxLines: 1,
                       style: TextStyle(overflow: TextOverflow.ellipsis,
                           fontSize: 12, fontWeight: FontWeight.bold),
